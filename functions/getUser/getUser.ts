@@ -33,7 +33,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
 });
 
-module.exports.handler = app;
+export default app
 
 // exports.handler = async function (event: any) {
 //   try{

@@ -13,6 +13,7 @@
     "local": "sam local start-api -t ./cdk.out/CdkServerlessStack.template.json"
   },
   "devDependencies": {
+    "@types/aws-serverless-express": "^3.3.5",
     "@types/express": "^4.17.13",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
