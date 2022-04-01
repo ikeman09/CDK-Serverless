@@ -22,15 +22,15 @@ export class CdkServerlessStack extends Stack {
 
     const getUser = new lambda.Function(this, "getUser", {
       runtime: lambda.Runtime.NODEJS_14_X,
-      code: lambda.Code.fromAsset("functions"),
-      handler: "getUser.handler",
+      code: lambda.Code.fromAsset("functions/getUser"),
+      handler: "lambda.handler",
       layers: [lambdaLayer]
     })
 
     const postUser = new lambda.Function(this, "postUser", {
       runtime: lambda.Runtime.NODEJS_14_X,
-      code: lambda.Code.fromAsset("functions"),
-      handler: "postUser.handler",
+      code: lambda.Code.fromAsset("functions/postUser"),
+      handler: "lambda.handler",
       layers: [lambdaLayer]
     });
 
@@ -43,8 +43,9 @@ export class CdkServerlessStack extends Stack {
 
     const hello = api.root.addResource('hello')
     hello.addMethod('GET', getUserIntegration)
+    hello.addMethod('POST', getUserIntegration)
 
-    const functiontwo = api.root.addResource('functiontwo')
+    const functiontwo = api.root.addResource('functiondos')
     functiontwo.addMethod('POST', postUserIntegration)
     functiontwo.addMethod('GET', postUserIntegration)
 
