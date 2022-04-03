@@ -1,4 +1,4 @@
-# AWS CDK template for REST APIs using Lambda functions and API Gateway
+# AWS CDK template for REST APIs using Lambda Functions and API Gateway
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 ## Install AWS CDK CLI and AWS SAM CLI
@@ -22,8 +22,14 @@ see documentation [here](https://docs.aws.amazon.com/cdk/v2/guide/cli.html)
 
 if using another OS, see full documentation [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 
-## Useful commands
+## Getting started
+1) Run `npm install` in root directory
+2) Change directory to `layers/nodejs` and run `npm install`
+3) Run `npm run build` to compile typescript code to javascript
+4) Run `cdk synth` to synthesize stacks in the app to create an AWS Cloudformation template
+5) Run `npm run local` to run lambda functions locally
 
+## Useful commands
 * `npm run build`   compile typescript to js
 * `npm run watch`   watch for changes and compile
 * `npm run test`    perform the jest unit tests
