@@ -9,8 +9,7 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "compile": "tsc && cdk synth",
-    "local": "sam local start-api -t ./cdk.out/CdkServerlessStack.template.json"
+    "local": "sam local start-api -t ./cdk.out/CdkServerlessStack.template.json --warm-containers LAZY"
   },
   "devDependencies": {
     "@types/aws-serverless-express": "^3.3.5",

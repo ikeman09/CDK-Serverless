@@ -17,7 +17,7 @@ app.get("/hello", (req: Request, res: Response, next: NextFunction) => {
   let dt = format(new Date(2014, 1, 11), 'yyyy-MM-dd')
 
   return res.status(200).json({
-    message: "Hello from path!" + dt,
+    message: "Hello from path LEZGAW!" + dt,
   });
 });
 
