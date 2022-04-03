@@ -35,8 +35,6 @@ describe('Lambda and Lambda Layers', () => {
       Runtime: 'nodejs14.x'
     })
   })
-
-
 })
 
 // Test Api Gateway
