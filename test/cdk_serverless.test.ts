@@ -25,14 +25,20 @@ describe('Lambda and Lambda Layers', () => {
   test('getUser Lambda Function Created', () => {
     template.hasResourceProperties('AWS::Lambda::Function', {
       Handler: 'getUser.handler',
-      Runtime: 'nodejs14.x'
+      Runtime: 'nodejs14.x',
+      Layers: [{
+        Ref: 'lamdaLayer64FAAC40'
+      }]
     })
   })
 
   test('postUser Lambda Function Created', () => {
     template.hasResourceProperties('AWS::Lambda::Function', {
       Handler: 'postUser.handler',
-      Runtime: 'nodejs14.x'
+      Runtime: 'nodejs14.x',
+      Layers: [{
+        Ref: 'lamdaLayer64FAAC40'
+      }]
     })
   })
 })
