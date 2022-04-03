@@ -2,7 +2,6 @@
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 ## Install AWS CDK CLI and AWS SAM CLI
-___
 
 ### AWS CDK Toolkit Installation
 1) Run `npm install -g aws-cdk`
@@ -22,7 +21,6 @@ see documentation [here](https://docs.aws.amazon.com/cdk/v2/guide/cli.html)
 `sam --version`
 
 if using another OS, see full documentation [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
-___
 
 ## Useful commands
 
