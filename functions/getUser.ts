@@ -15,7 +15,7 @@ exports.handler = async function (event: any) {
     return {
       statusCode: 400,
       headers: {},
-      body: "not GET/ request"
+      body: "Not found"
     }
   }catch (e){
     return {
