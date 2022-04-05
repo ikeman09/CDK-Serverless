@@ -29,6 +29,9 @@ if using another OS, see full documentation [here](https://docs.aws.amazon.com/s
 4) Run `cdk synth` to synthesize stacks in the app to create an AWS Cloudformation template
 5) Run `npm run local` to run lambda functions locally
 
+## Testing
+Run `npm run test` to test infrastructure <br> (possibly also test business logic in lambda functions)
+
 ## Useful commands
 * `npm run build`   compile typescript to js
 * `npm run watch`   watch for changes and compile
